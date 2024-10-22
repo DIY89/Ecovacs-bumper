@@ -55,6 +55,43 @@ As work to reverse the protocols and provide a self-hosted central server is sti
 
 See the documentation on [Read the Docs](https://bumper.readthedocs.io)
 
+## Start with example file
+1. Setup a linux system and install docker
+2. clone repo into linux 
+3. Navigate to example folder 
+4. `docker docker-compose.yaml up`
+
+## Howto convert CA Certificate into Android 12 readable file
+1. open console
+2. Navigate to folder with file ca.crt
+3. `openssl x509 -in ca.crt -noout -text >> ca.crt`
+
+## This is How You Can Easily Unlock Developer Options Running Android 12 (https://wccftech.com/how-to/how-to-unlock-developer-options-in-android-12-and-access-powerful-hidden-features/)
+1. The first thing that you have to do is launch the Settings app.
+2. Scroll down and tap on About Phone.
+3. Now, scroll down to the end and tap on the Build Number seven times.
+Unlock Developer Options in Android 12 Phones and Unlock Hidden tools and features
+4. You will see the prompt telling you that "You are now a developer!"
+5. You might be asked to enter your passcode to unlock developer options in Android 12.
+This is all that you have to do to enable developer options. However, it is another method to access the unlocked developer options. Follow the instructions below to access developer options on Android 12.
+1. Launch Settings.
+2. Tap on System.
+Unlock Developer Options in Android 12 on Google Pixel Phones and Unlock Hidden tools and features
+3. Tap on Developer Options.
+Unlock Developer Options in Android 12 on Google Pixel Phones and Unlock Hidden tools and features
+
+
+## Howto install CA Certificate under Android 12 (https://www.youtube.com/watch?v=GERlhgCcoBc)
+1. Download and extract SDK Platform Tools.
+https://developer.android.com/studio/...
+2. Create a folder named "Android" in "C:\" drive.
+3. Copy and paste the "platform-tools" folder in "C:\Android".
+4. Search for "This PC". Right click it and click "Properties". Scroll at the bottom and click "Advanced system settings". On the new window click "Environment Variables...".
+5. Double click the "Path" variable in System variables. Click "New" and paste "C:\Android\platform-tools" as value. Now you have implemented ADB with Windows Terminal.
+6. Turn on USB Debugging on your Android phone and connect it to your PC.
+7. Open your terminal of choice, type "adb devices" and push ENTER.
+8. Tap "Allow" on your phone.
+9. Congrats. Now you can use the ADB commands you want!
 ---
 ### Thanks
 A big thanks to the original project creator @torbjornaxelsson, without his work this project would have taken much longer to build. 
